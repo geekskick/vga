@@ -11,7 +11,7 @@ set_property target_language VHDL [current_project]
 set_property simulator_language VHDL [current_project]
 
 set src_files { vga_driver.vhd video_mem.vhd top_vga.vhd }
-set test_files { vga_driver_tb.vhd video_mem_tb.vhd top_vga_tb.vhd all_tb.vhd }
+set test_files { vga_driver_tb.vhd video_mem_tb.vhd all_tb.vhd }
 # Add the files
 foreach f $src_files {
     set fname [file join $SRC_ROOT src/ $f ]
