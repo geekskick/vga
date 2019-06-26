@@ -25,13 +25,15 @@ begin
     addr_h_i <= to_integer(unsigned(addr_h));
     
     -- Just a bunch of different squares
+    -- 640 wide
+    -- 480 tall
     process(addr_v_i, addr_h_i)
         constant section_1_right : integer := 160;
         constant section_2_right : integer := 320;
         constant section_3_right : integer := 480;
-        constant section_4_right : integer := 600;
-        constant top_row_bottom  : integer := 200;
-        constant bottom_row_bottom:integer := 400;
+        constant section_4_right : integer := 640;
+        constant top_row_bottom  : integer := 240;
+        constant bottom_row_bottom:integer := 480;
 
     begin
         code <= "000";
